@@ -11,6 +11,10 @@ Check back often for updates.
 * At the above link you can download PEST. Be sure to add the relevant (pest.exe/sceua_p.exe) to you environment path variable.
 * This will let you call PEST from the working directory.
 
+###To Run the Script
+* From the command line :> python -i hbv_py_modular.py
+* Note: to generate a plot of the output make sure to set the variable "calibrate" to 'No'
+* If you use the calibration functionality, calibrate should be set to 'Yes' to avoid plot generation during execution.
 
 #### To perform a calibration run
 * Notes: *.pst is the PEST control file. It contains: the intial/min/max parameter ranges, the command line call to the model (in this case the .py file), the template and instruction files. These files tell PEST how to read/write the parameter file as well as how to interpret the model output.
