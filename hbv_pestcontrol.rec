@@ -1,0 +1,145 @@
+
+                             SCEUA_P RUN RECORD FILE
+ 
+ 
+ Name of PEST control file : hbv_pestcontrol.pst
+ Single observation-equivalent minimized as model-calculated objective function.
+ 
+ Problem dimensions ----->
+ 
+    Number of parameters                               : 10
+    Number of adjustable parameters                    : 10
+    Number of observations                             : 1
+    Number of prior information eqns                   : 0
+ 
+ SCE control variables ----->
+ 
+    Number of complexes in initial population          : 3
+    Minumum number of complexes                        : 3
+    Number of parameter sets in each complex           : 21
+    Number of parameter sets in a sub-complex          : 11
+    Number of evolution steps before complex shuffling : 21
+    Initial random seed                                : 555
+ 
+    Include initial parameter set in population        : y
+    Print information on every point of population     : y
+ 
+ SCE termination criteria ----->
+    Maximum number of model runs                       : 1000
+    Relative objective function improvement            :  1.0000E-02
+    Number of shuffling loops to which this applies    : 5
+ 
+ Parameter data ----->
+ 
+ Name         Transformation          Initial_value     Lower_bound       Upper_bound
+ dd              log                     5.50000           3.00000            7.00000    
+ fc              log                     150.000           100.000            200.000    
+ beta            log                     3.50000           1.00000            7.00000    
+ c               log                    5.000000E-02      1.000000E-02       7.000000E-02
+ k0              log                    0.100000          5.000000E-02       0.200000    
+ l0              log                     3.00000           2.00000            5.00000    
+ k1              log                    8.000000E-02      1.000000E-02       0.100000    
+ k2              log                    3.000000E-02      1.000000E-02       5.000000E-02
+ kp              log                    3.000000E-02      1.000000E-02       5.000000E-02
+ pwp             log                     110.000           90.0000            180.000    
+ 
+ Name         Scale             Offset
+ dd             1.00000           0.00000    
+ fc             1.00000           0.00000    
+ beta           1.00000           0.00000    
+ c              1.00000           0.00000    
+ k0             1.00000           0.00000    
+ l0             1.00000           0.00000    
+ k1             1.00000           0.00000    
+ k2             1.00000           0.00000    
+ kp             1.00000           0.00000    
+ pwp            1.00000           0.00000    
+ 
+
+                           RECORD OF OPTIMISATION PROCESS
+ 
+
+
+ INITIAL PARAMETER SET
+    Number of model runs so far                  =      1
+    Objective function                           =   1.48690    
+
+
+ EVOLUTION LOOP NUMBER 1
+    Number of model runs so far                  =      63
+    Best objective function so far               =  0.528012    
+
+
+ EVOLUTION LOOP NUMBER 2
+    Number of model runs so far                  =      136
+    Best objective function so far               =  0.483166    
+
+
+ EVOLUTION LOOP NUMBER 3
+    Number of model runs so far                  =      223
+    Best objective function so far               =  0.476922    
+
+
+ EVOLUTION LOOP NUMBER 4
+    Number of model runs so far                  =      312
+    Best objective function so far               =  0.462091    
+
+
+ EVOLUTION LOOP NUMBER 5
+    Number of model runs so far                  =      399
+    Best objective function so far               =  0.445250    
+
+
+ EVOLUTION LOOP NUMBER 6
+    Number of model runs so far                  =      490
+    Best objective function so far               =  0.441532    
+
+
+ EVOLUTION LOOP NUMBER 7
+    Number of model runs so far                  =      576
+    Best objective function so far               =  0.430722    
+
+
+ EVOLUTION LOOP NUMBER 8
+    Number of model runs so far                  =      668
+    Best objective function so far               =  0.428976    
+
+
+ EVOLUTION LOOP NUMBER 9
+    Number of model runs so far                  =      764
+    Best objective function so far               =  0.427619    
+
+
+ EVOLUTION LOOP NUMBER 10
+    Number of model runs so far                  =      851
+    Best objective function so far               =  0.425411    
+
+
+ EVOLUTION LOOP NUMBER 11
+    Number of model runs so far                  =      942
+    Best objective function so far               =  0.425411    
+
+
+                        COMPLETION OF SCE PROCESS
+
+ Reason for termination of SCE process:-
+ 
+ User-supplied maximum number of model runs has been exceeded.
+
+ Optimised parameter values ----->
+
+    Name                Value
+    dd                    6.09828    
+    fc                    195.488    
+    beta                  2.61434    
+    c                    6.795830E-02
+    k0                   0.162841    
+    l0                    4.86684    
+    k1                   2.917657E-02
+    k2                   4.881738E-02
+    kp                   4.977506E-02
+    pwp                   105.971    
+ 
+ See file hbv_pestcontrol.par for optimised parameter values in parameter value 
+     file format.
+ See file sceout.dat for SCEUA-recorded optimisation record.

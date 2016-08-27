@@ -26,7 +26,7 @@ obs_q
 * observation data
 err_meas 0.0 1.0 obs_q
 * model command line
-hbv_py
+hbv_py_modular
 * model input/output
 params_calibrate.tpl params_calibrate.dat
 sim_error.ins model_err.dat

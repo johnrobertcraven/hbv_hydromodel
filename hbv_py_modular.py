@@ -123,6 +123,10 @@ def hbv_main(n_days,params,air_temp,prec, dpem):
     #End of simulation
     return qm
 #=======================================================================
+
+#Calibration Flag - *Set to 'Yes' during calibration to prevent plotting
+calibrate = 'No'
+
 #Read Input (Air Temp.,PET, Precip.)
 month, temp, precip = np.genfromtxt('inputPrecipTemp.txt',usecols=[1,2,3],unpack=True)
 monthly, tpem, dpem = np.genfromtxt('inputMonthlyTempEvap.txt',unpack=True)
@@ -133,10 +137,19 @@ q_obs = np.genfromtxt('Qobs.txt')
 #Read paramter values
 para_init = np.genfromtxt('params_calibrate.dat',skip_header=1,usecols=[1],unpack=True)
 
-q_sim = hbv_main(len(temp),para_init,temp,precip,dpem)
-plt.plot(q_sim)
-plt.plot(q_obs)
-plt.show()
+if calibrate == 'Yes':
+    pass
+else:
+    
+    q_sim = hbv_main(len(temp),para_init,temp,precip,dpem)
+    plt.plot(q_obs, label='Q_obs', color='blue')
+    plt.plot(q_sim, label='Q_sim', color='red', ls='--')
+    
+    plt.legend(fontsize=10)
+    plt.ylabel('Stream Flow [cms]', fontsize=10)
+    plt.xlabel('Number of Days from Run Start', fontsize=10)
+    plt.tight_layout()
+    plt.show()
 
 model_error = nse_cost(para_init)
 
