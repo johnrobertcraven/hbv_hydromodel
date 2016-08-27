@@ -1,0 +1,34 @@
+pcf
+* control data
+restart estimation
+10 1 1 0 1
+1 1 single point 1 0 0
+5.0 2.0 0.3 0.03 10
+3.0 3.0 0.001
+0.1
+30 0.01 3 3 0.01 3
+1 1 1
+* parameter groups
+hbv_params relative 0.01 0.0 switch 2.0 parabolic
+* parameter data
+dd log factor 5.5  3.0 7.0 hbv_params 1.0000 0.0000 1
+fc log factor 150.  100.0 200. hbv_params 1.0000 0.0000 1
+beta log factor 3.5  1.0 7.0 hbv_params 1.0000 0.0000 1
+c log factor 0.05  0.01 0.07 hbv_params 1.0000 0.0000 1
+k0 log factor 0.1  0.05 0.2 hbv_params 1.0000 0.0000 1
+l0 log factor 3.0  2.0 5.0 hbv_params 1.0000 0.0000 1
+k1 log factor 0.08  0.01 0.1 hbv_params 1.0000 0.0000 1
+k2 log factor 0.03  0.01 0.05 hbv_params 1.0000 0.0000 1
+kp log factor 0.03  0.01 0.05 hbv_params 1.0000 0.0000 1
+pwp log factor 110.  90. 180. hbv_params 1.0000 0.0000 1
+* observation groups
+obs_q
+* observation data
+err_meas 0.0 1.0 obs_q
+* model command line
+hbv_py
+* model input/output
+params_calibrate.tpl params_calibrate.dat
+sim_error.ins model_err.dat
+* prior information
+
