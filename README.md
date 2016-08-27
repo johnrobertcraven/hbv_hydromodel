@@ -16,3 +16,8 @@ Check back often for updates.
 * Notes: *.pst is the PEST control file. It contains: the intial/min/max parameter ranges, the command line call to the model (in this case the .py file), the template and instruction files. These files tell PEST how to read/write the parameter file as well as how to interpret the model output.
 * From the command line:> sceua_p hbv_pestcontrol.pst and follow the prompts (see PEST manual for details)
 * PEST will then do the following: 1) run the model with the initial parameter set, 2) read the model output, 3) evaluate the objective function and perturb the parameters according to the algorithm you used until a convergence criteria is met.
+
+### Original Matlab Code
+The original Matlab code, from which this code was adapted is the work of Professor Amir AghaKouchak at the University of California Irvine.
+
+Check out his research [here] (http://amir.eng.uci.edu/software.php)
